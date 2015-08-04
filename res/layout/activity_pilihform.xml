@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgournd"
+    tools:context="com.example.app.Pilihform"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/btnshare"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/share" />
+
+    <TextView
+        android:id="@+id/lblWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnwork"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnwork"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnshare"
+        android:layout_alignLeft="@+id/btnshare"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/laporan" />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnshare"
+        android:layout_below="@+id/btnshare"
+        android:background="@drawable/logout" />
+
+</RelativeLayout>

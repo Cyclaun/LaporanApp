@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.app.Work"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+        <TextView
+            android:id="@+id/lblWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:text="Kepentingan"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinKepentingan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblWelcome" />
+
+        <EditText
+            android:id="@+id/txtBiaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtIsiList"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtJudulList"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtIsiList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtJudulList"
+            android:layout_below="@+id/txtBiaya"
+            android:layout_marginTop="19dp"
+            android:text="Tanggal"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtIsiList"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtIsiList"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/txtTanggalList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtTanggal"
+            android:layout_below="@+id/txtTanggal"
+            android:layout_marginTop="16dp"
+            android:text="Keterangan"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtTanggalList"
+            android:layout_below="@+id/txtTanggalList"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLength="500" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtKeterangan"
+            android:layout_below="@+id/txtKeterangan"
+            android:layout_marginTop="24dp"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/txtJudulList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblWelcome"
+            android:layout_below="@+id/spinKepentingan"
+            android:layout_marginTop="16dp"
+            android:text="Biaya"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnSubmit"
+            android:layout_alignBottom="@+id/btnSubmit"
+            android:layout_alignParentRight="true"
+            android:text="Cancel" />
+
+        <TextView
+            android:id="@+id/lblCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtKeterangan"
+            android:text="0 / 500" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+
